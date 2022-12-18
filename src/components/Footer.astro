@@ -1,16 +1,19 @@
+---
+import { AUTHOR } from "../branding";
+---
+
 <footer>
     <p>
-        &copy; {new Date().getFullYear()} Joe Ballard &bull; Built with
-        <a href="https://astro.build" target="_blank">Astro</a>
-        &bull; Hosted on
-        <a href="https://www.netlify.com" target="_blank">Netlify</a>
+        &copy; {new Date().getFullYear()} {AUTHOR} &bull; 
+        Built with <a href="https://astro.build" target="_blank">Astro</a> &bull; 
+        Hosted on <a href="https://www.netlify.com" target="_blank">Netlify</a>
     </p>
 </footer>
 
 <style>
     footer {
-        background: black;
-        color: white;
+        background: #111;
+        color: #ccc;
         font-family: sans-serif;
         font-style: italic;
         font-size: small;

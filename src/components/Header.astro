@@ -1,16 +1,16 @@
 ---
-import { BRANDING } from "../config";
+import { BRAND } from "../branding";
 ---
 
 <header>
     <div class="container">
-        <h1 class="brand">{BRANDING}</h1>
+        <div class="brand">
+            {BRAND}
+        </div>
         <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/blog">Blog</a></li>
-            </ul>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/blog">Blog</a>
         </nav>
     </div>
 </header>
@@ -18,8 +18,8 @@ import { BRANDING } from "../config";
 <style>
     header {
         height: 50px;
-        background: black;
-        color: white;
+        background: #111;
+        color: #ccc;
         font-family: sans-serif;
     }
 
@@ -31,20 +31,17 @@ import { BRANDING } from "../config";
         padding: 20px;
     }
 
-    h1 {
-        font-size: x-large;
+    .brand {
+        font-size: larger;
     }
 
-    ul {
-        display: flex;
-        list-style: none;
+    nav {
+        font-size: small;
+        text-transform: uppercase;
     }
 
-    li {
+    nav a {
         padding: 0 10px;
-    }
-
-    a {
         color: skyblue;
         text-decoration: none;
     }

@@ -1,18 +1,44 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
-const title = "Blog";
 const posts = await Astro.glob("../../posts/*.md");
 ---
 
-<Layout title={title}>
-    <div class="container">
-        {posts.map(post => (
-            <h3>{post.frontmatter.title}</h3>
-            <div>{new Date(post.frontmatter.date).toISOString().split('T')[0]}</div>
-            <div>
-                <a href={`/blog/${post.frontmatter.slug}`}>Read More</a>    
-            </div>
-        ))}
+<Layout title="Blog">
+    <div class="posts-list">
+        {
+            posts.map((post) => (
+                <div class="post-row">
+                    <a class="post-link" href={`/blog/${post.frontmatter.slug}`} >
+                        {post.frontmatter.title}
+                    </a>
+                    -
+                    <span class="post-date">
+                        {new Date(post.frontmatter.date).toISOString().split("T")[0]}
+                    </span>
+                </div>
+            ))
+        }
     </div>
 </Layout>
+
+<style>
+    .posts-list {
+        margin: 0 10px;
+    }
+
+    .post-row {
+        margin: 5px 0;
+    }
+
+    .post-link {
+        color: skyblue;
+        text-decoration: none;
+    }
+
+    .post-date {
+        font-size: small;
+        font-style: italic;
+        color: #666;
+    }
+</style>
