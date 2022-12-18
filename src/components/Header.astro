@@ -1,5 +1,6 @@
 <header>
     <div class="container">
+        <h1 class="brand">[Site-Name-Goes-Here]</h1>
         <nav>
             <ul>
                 <li><a href="/">Home</a></li>
@@ -9,3 +10,38 @@
         </nav>
     </div>
 </header>
+
+<style>
+    header {
+        height: 50px;
+        background: black;
+        color: white;
+        font-family: sans-serif;
+    }
+
+    header .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: x-large;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+    }
+
+    li {
+        padding: 0 10px;
+    }
+
+    a {
+        color: skyblue;
+        text-decoration: none;
+    }
+</style>

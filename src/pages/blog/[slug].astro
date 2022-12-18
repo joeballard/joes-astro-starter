@@ -19,11 +19,25 @@ const { Content, frontmatter } = Astro.props.post;
 
 <Layout title={frontmatter.title}>
     <article>
-        <div class="container">
-            <a class="btn" href="/blog">Go Back</a>
-            <h2>{frontmatter.title}</h2>
-            <div>{new Date(frontmatter.date).toISOString().split("T")[0]}</div>
-            <Content />
+        <div class="post-head">
+            <h2 class="post-title">{frontmatter.title}</h2>
+            <div class="post-date">
+                {new Date(frontmatter.date).toISOString().split("T")[0]}
+            </div>
         </div>
+        <Content />
     </article>
 </Layout>
+
+<style>
+    .post-head {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .post-date {
+        font-style: italic;
+        color: #666;
+    }
+</style>
