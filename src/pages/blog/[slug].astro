@@ -22,7 +22,7 @@ const { Content, frontmatter } = Astro.props.post;
         <div class="container">
             <a class="btn" href="/blog">Go Back</a>
             <h2>{frontmatter.title}</h2>
-            <div>{frontmatter.date}</div>
+            <div>{new Date(frontmatter.date).toISOString().split("T")[0]}</div>
             <Content />
         </div>
     </article>

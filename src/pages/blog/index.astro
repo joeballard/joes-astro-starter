@@ -9,7 +9,7 @@ const posts = await Astro.glob("../../posts/*.md");
     <div class="container">
         {posts.map(post => (
             <h3>{post.frontmatter.title}</h3>
-            <div>{post.frontmatter.date}</div>
+            <div>{new Date(post.frontmatter.date).toISOString().split('T')[0]}</div>
             <div>
                 <a href={`/blog/${post.frontmatter.slug}`}>Read More</a>    
             </div>
