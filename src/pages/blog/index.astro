@@ -4,6 +4,7 @@ import { BRAND } from "../../branding";
 
 const title = BRAND + " - Blog";
 const posts = await Astro.glob("../../posts/*.md");
+posts.sort((a,b) => a.frontmatter.date < b.frontmatter.date ? 1 : -1)
 ---
 
 <Layout title={title}>
