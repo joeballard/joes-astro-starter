@@ -12,7 +12,7 @@ posts.sort((a,b) => a.frontmatter.date < b.frontmatter.date ? 1 : -1)
         {
             posts.map((post) => (
                 <div class="post-row">
-                    <a class="post-link" href={`/blog/${post.frontmatter.slug}`} >
+                    <a class="post-link" target="_blank" href={`/blog/${post.frontmatter.slug}`} >
                         {post.frontmatter.title}
                     </a>
                     -
