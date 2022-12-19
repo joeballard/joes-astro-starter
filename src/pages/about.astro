@@ -1,7 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { BRAND } from "../branding";
+
+const title = BRAND + " - About";
 ---
 
-<Layout title="About">
+<Layout title={title}>
     <p>[About-Content-Here]</p>
 </Layout>

@@ -1,10 +1,12 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import { BRAND } from "../../branding";
 
+const title = BRAND + " - Blog";
 const posts = await Astro.glob("../../posts/*.md");
 ---
 
-<Layout title="Blog">
+<Layout title={title}>
     <div class="posts-list">
         {
             posts.map((post) => (
