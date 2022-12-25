@@ -3,16 +3,16 @@ import { BRAND } from "../branding";
 ---
 
 <header>
-    <div class="container">
-        <div class="brand">
-            {BRAND}
-        </div>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/blog">Blog</a>
-        </nav>
+    <div class="brand">
+        {BRAND}
     </div>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog">Blog</a></li>
+        </ul>       
+    </nav>
 </header>
 
 <style>
@@ -21,10 +21,6 @@ import { BRAND } from "../branding";
         background: #111;
         color: #ccc;
         font-family: sans-serif;
-    }
-
-    header .container {
-        height: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -40,7 +36,16 @@ import { BRAND } from "../branding";
         text-transform: uppercase;
     }
 
-    nav a {
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        display: inline-block;
+        padding-inline: 5px;
+    }
+
+    a {
         padding: 0 10px;
         color: skyblue;
         text-decoration: none;
