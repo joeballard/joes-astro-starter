@@ -3,35 +3,10 @@ import { AUTHOR } from "../branding";
 ---
 
 <footer>
-    <ul>
-        <li>&copy; {new Date().getFullYear()} {AUTHOR}</li>
-        <li>Built with <a href="https://astro.build" target="_blank">Astro</a></li>
-        <li>Hosted on <a href="https://www.netlify.com" target="_blank">Netlify</a></li>
-    </ul>
+    <small>
+        &copy; {new Date().getFullYear()} {AUTHOR} &bull;
+        Built with <a href="https://astro.build" target="_blank">Astro</a>  &bull;
+        Hosted on <a href="https://www.netlify.com" target="_blank">Netlify</a>
+    </small>   
 </footer>
 
-<style>
-    footer {
-        background: #111;
-        color: #ccc;
-        font-family: sans-serif;
-        font-style: italic;
-        font-size: small;
-        text-align: center;
-        padding: 20px;
-    }
-
-    ul {
-        list-style-type: none;
-    }
-
-    li {
-        display: inline-block;
-        padding-inline: 5px;
-    }
-
-    a {
-        color: skyblue;
-        text-decoration: none;
-    }
-</style>

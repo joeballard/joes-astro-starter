@@ -1,22 +1,9 @@
-/* global css */
+@import url("https://unpkg.com/@picocss/pico@latest/css/pico.classless.min.css");
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+header {
+    padding: 0 !important;
 }
 
-body {
-    background: #111;
-    color: #ccc;
-    font-family: sans-serif;
-}
-
-main {
-    padding: 20px;
-}
-
-hr {
-    border: 1px solid #333;
-    margin: 0 20px;
+footer {
+    padding: 0 !important;
 }

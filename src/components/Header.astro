@@ -3,51 +3,14 @@ import { BRAND } from "../branding";
 ---
 
 <header>
-    <div class="brand">
-        {BRAND}
-    </div>
     <nav>
+        <ul>
+            <li><strong>{BRAND}</strong></li>
+        </ul>
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/blog">Blog</a></li>
-        </ul>       
+        </ul>
     </nav>
 </header>
-
-<style>
-    header {
-        height: 50px;
-        background: #111;
-        color: #ccc;
-        font-family: sans-serif;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px;
-    }
-
-    .brand {
-        font-size: larger;
-    }
-
-    nav {
-        font-size: small;
-        text-transform: uppercase;
-    }
-
-    ul {
-        list-style-type: none;
-    }
-
-    li {
-        display: inline-block;
-        padding-inline: 5px;
-    }
-
-    a {
-        padding: 0 10px;
-        color: skyblue;
-        text-decoration: none;
-    }
-</style>
