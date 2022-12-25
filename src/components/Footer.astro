@@ -3,11 +3,11 @@ import { AUTHOR } from "../branding";
 ---
 
 <footer>
-    <p>
-        &copy; {new Date().getFullYear()} {AUTHOR} &bull; 
-        Built with <a href="https://astro.build" target="_blank">Astro</a> &bull; 
-        Hosted on <a href="https://www.netlify.com" target="_blank">Netlify</a>
-    </p>
+    <ul>
+        <li>&copy; {new Date().getFullYear()} {AUTHOR}</li>
+        <li>Built with <a href="https://astro.build" target="_blank">Astro</a></li>
+        <li>Hosted on <a href="https://www.netlify.com" target="_blank">Netlify</a></li>
+    </ul>
 </footer>
 
 <style>
@@ -19,6 +19,15 @@ import { AUTHOR } from "../branding";
         font-size: small;
         text-align: center;
         padding: 20px;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        display: inline-block;
+        padding-inline: 5px;
     }
 
     a {
