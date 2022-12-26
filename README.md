@@ -7,6 +7,5 @@ Minimal starter for Astro sites/blogs in other repos.
 
 ## Credit - based on ideas from:
 
-* [Astro - Astro Starter Kit: Blog](https://github.com/withastro/astro/tree/main/examples/blog)
 * [Maxi Ferreira - Astro Blog Template](https://github.com/Charca/astro-blog-template)
 * [Brad Traversy - Astro Crash Course](https://github.com/bradtraversy/astro-crash-course)
