@@ -8,6 +8,20 @@ header {
 footer {
     padding-top: 0 !important;
     padding-bottom: 8px !important;
-    text-align: center !important;
+    text-align: center;
     font-style: italic;
+}
+
+main {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+article {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    
+    margin-top: 0 !important;
+    margin-bottom: 8px !important;
+    
 }
